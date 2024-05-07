@@ -9,7 +9,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <DevSupport ComponentPreviews={ComponentPreviews}
+                useInitialHook={useInitial}
+    >
+      <App/>
+    </DevSupport>
   </React.StrictMode>
 );
 
